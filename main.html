@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Assorted Portfolio</title>
+		<!-- bootstrap for the main css; styles for supplementary css; google's Lato font for text; jquery js and bootstrap js for modal support -->
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/styles.css">
+		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:100,300,400">
+		<script src="js/jquery-1.11.3.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<header>
+				<!-- title row -->
+				<div class="row">
+					<div class="col-md-6">
+						<img class="title-logo" src="img/logo.jpg" alt="udacity logo">
+					</div>
+					<div class="col-md-6 text-right text-uppercase">
+						<h1 class="text-thin title-super"><abbr title="Pronounced: I zen brown">Eisenbraun</abbr></h1>
+						<h4>Front End Ninja</h4>
+					</div>
+				</div>
+				<!-- single row for the horizontal rule -->
+				<div class="row">
+					<div class="col-md-12">
+						<hr>
+					</div>
+				</div>
+			</header>
+			<figure>
+				<!-- main image row -->
+				<div class="row">
+					<div class="col-md-12">
+						<img class="img-responsive" src="http://placekitten.com/1140/550" alt="cute kitty">
+					</div>
+				</div>
+			</figure>
+			<section>
+				<!-- sub-title row -->
+				<div class="row">
+					<div class="col-md-12 text-muted text-thick">
+						<h2>Featured Work</h2>
+					</div>
+				</div>
+				<!-- row for featured work img, img names and urls -->
+				<div class="row text-center">
+					<div class="col-md-4">
+						<figure>
+							<img class="img-responsive" src="img/puppy1.webp" alt="cute puppy" data-toggle="modal" data-target="#project1">
+							<figcaption>
+								<h3 class="text-uppercase"><abbr title="Really it is Puppify">Appify</abbr></h3>
+							</figcaption>
+						</figure>
+						<nav>
+							<a href="https://github.com/udacity/Appify/">https://github.com/udacity/appify</a>
+						</nav>
+					</div>
+					<div class="col-md-4">
+						<figure>
+							<img class="img-responsive" src="img/sunflower.webp" alt="sunflower" data-toggle="modal" data-target="#project2">
+							<figcaption>
+								<h3 class="text-uppercase">sunflower</h3>
+							</figcaption>
+						</figure>
+						<nav>
+							<a href="https://github.com/udacity/sunflower/">https://github.com/udacity/sunflower</a>
+						</nav>
+					</div>
+					<div class="col-md-4">
+						<figure>
+							<img class="img-responsive upsize" src="img/th.jpg" alt="eagle nebula" data-toggle="modal" data-target="#project3">
+							<figcaption>
+								<h3 class="text-uppercase">Bokeh</h3>
+							</figcaption>
+						</figure>
+						<nav>
+							<a href="https://github.com/udacity/bokeh/">https://github.com/udacity/bokeh</a>
+						</nav>
+					</div>
+				</div>
+			</section>
+		</div>
+		<section>
+		<!-- Modal  project1-->
+		<div class="modal fade" id="project1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1" aria-hidden="true">
+			<div class="modal-dialog modal-sm">
+				<div class="modal-content">
+					<div class="modal-header">
+						<header>
+							<h4 class="modal-title" id="myModalLabel1">Favorite Puppy Image</h4>
+						</header>
+					</div>
+					<div class="modal-body">
+						<figure>
+							<img class="img-responsive" src="img/puppy1.webp" alt="cute puppy">
+							<figcaption>
+								This was my first project in this class. I learned a lot about HTML and CSS.  Starring Zoe the 6 month old puppy (who is now 10 years old ).
+							</figcaption>
+						</figure>
+					</div>
+					<footer>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						</div>
+					</footer>
+				</div>
+			</div>
+		</div>
+		<!-- Modal  project2-->
+		<div class="modal fade" id="project2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2" aria-hidden="true">
+			<div class="modal-dialog modal-sm">
+				<div class="modal-content">
+					<div class="modal-header">
+						<header>
+							<h4 class="modal-title" id="myModalLabel2">Nice Sunflower Image</h4>
+						</header>
+					</div>
+					<div class="modal-body">
+						<figure>
+							<img class="img-responsive" src="img/sunflower.webp" alt="sunflower">
+							<figcaption>
+								This was the Sunflower in my backyard before the squirrels got to it and feasted on it.
+							</figcaption>
+						</figure>
+					</div>
+					<footer>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						</div>
+					</footer>
+				</div>
+			</div>
+		</div>
+		<!-- Modal  project3-->
+		<div class="modal fade" id="project3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel3" aria-hidden="true">
+			<div class="modal-dialog modal-lg">
+				<div class="modal-content">
+					<div class="modal-header">
+						<header>
+							<h4 class="modal-title" id="myModalLabel3">This Is Better Than Bokeh</h4>
+						</header>
+					</div>
+					<div class="modal-body">
+						<figure>
+							<img class="img-responsive" src="img/th.jpg" alt="eagle nebula">
+							<figcaption>
+								Who knows what a Bokeh is? Instead here is a cool picture of the "Pillars of Creation" also known as the Eagle Nebula .
+							</figcaption>
+						</figure>
+					</div>
+					<footer>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						</div>
+					</footer>
+				</div>
+			</div>
+		</div>
+		</section>
+	</body>
+</html>
